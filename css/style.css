@@ -75,6 +75,31 @@ header {
 	border-bottom: solid 1px #bebebe;
 	padding: 20px 0 0px;
 }
+header .name {
+	width:60%;
+	display: inline-block;
+}
+header .contact{
+	width:290px;
+	margin-left: 40px;
+	text-align: right;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+header .contact .email {
+	color: #7d858f;
+}
+header .contact .links {
+	margin-bottom: 2em;
+}
+header .contact .links a:before {
+	content:"| ";
+	color: #e1e1e1;
+	margin: 0 5px;
+}
+header .contact .links a:first-child:before {
+	content:"";
+}
 header h1{
 	font-family:"HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight:100;
@@ -89,10 +114,7 @@ header h2{
 /*header .box {*/
 	/*display: inline-block;*/
 /*}*/
-header .contact{
-	display: none;
-	width:290px;
-}
+
 header .box,
 #main {
 	width:90%;
@@ -101,7 +123,6 @@ header .box,
 #main{
 	padding:70px 0;
 }
-
 article{
 	margin-bottom:60px;
 }
@@ -150,6 +171,8 @@ article p {
 }
 footer {
 	border-top: solid 2px #fff;
+	width:90%;
+	margin:0 auto;
 }
 
 /* ==|== non-semantic helper classes ======================================== */
