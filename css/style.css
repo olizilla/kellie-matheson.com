@@ -8,15 +8,16 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
 body { margin: 0; font-size: 13px; line-height: 1.231; }
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: Helvetica,Arial,sans-serif; color: #111; }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: #939ca5; text-decoration: none; }
+a:visited { color: #939ca5; }
+a:hover { color: #50555a; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
@@ -63,23 +64,78 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: olizilla <oli@zilla.org.uk>
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+html {
+	background: #f0f0f0;
+}
+header {
+	background: #f7f7f7;
+	border-bottom: solid 1px #bebebe;
+	padding: 20px 0 0px;
+}
+header h1{
+	font-family:"HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:100;
+	font-size:3.6em;
+	line-height: 0em;
+}
+header h2{
+	font-size: 2.4em;
+	text-transform: lowercase;
+	line-height: 1;
+}
+#main{
+	padding:70px 0;
+}
+article{
+	margin-bottom:60px;
+}
+article header {
+	border-bottom: solid 2px #fff;
+	background: transparent;
+	margin: -10px 0 0;
+	padding:0;
+}
+article header h1 {
+	font-size: 2.6em;
+	line-height: 0em;
+}
+article header p,
+footer p{
+	color: #7d858f;
+	letter-spacing: inherit;
+	font-size: 1.1em;
+	line-height: 1.4;
+}
+article img {
+	float:left;
+	width: 60%;
+	min-width: 360px;
+}
+article .box {
+	width:300px;
+	display: inline-block; 
+	margin-left: 34px;
+}
+article p {
+	letter-spacing: 0.4px;
+	line-height: 1.4;
+}
+.btn {
+	background:#ffffff;
+	padding: 4px 10px;
+	text-align:center;
+	font-size: 15px;
+	border: solid 1px #d3d3d3;
+	border-radius:0.2em;
+	-moz-border-radius:0.2em;
+	-webkit-border-radius:0.2em;
+}
+footer {
+	border-top: solid 2px #fff;
+}
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
