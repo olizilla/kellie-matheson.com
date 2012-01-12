@@ -71,7 +71,7 @@ html {
 	background: #f0f0f0;
 }
 header {
-	background: #f7f7f7;
+	background: #fafafa;
 	border-bottom: solid 1px #bebebe;
 	padding: 20px 0 0px;
 }
@@ -86,9 +86,22 @@ header h2{
 	text-transform: lowercase;
 	line-height: 1;
 }
+/*header .box {*/
+	/*display: inline-block;*/
+/*}*/
+header .contact{
+	display: none;
+	width:290px;
+}
+header .box,
+#main {
+	width:90%;
+	margin:0 auto;
+}
 #main{
 	padding:70px 0;
 }
+
 article{
 	margin-bottom:60px;
 }
@@ -113,11 +126,13 @@ article img {
 	float:left;
 	width: 60%;
 	min-width: 360px;
+	margin-bottom: 10px;
+	border:solid 1px #CACED1;
 }
 article .box {
-	width:300px;
+	width:290px;
 	display: inline-block; 
-	margin-left: 34px;
+	margin-left: 38px;
 }
 article p {
 	letter-spacing: 0.4px;
