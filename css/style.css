@@ -89,6 +89,10 @@ header .contact{
 header .contact .email {
 	color: #7d858f;
 }
+header .contact .telephone {
+	letter-spacing: 1px;
+}
+
 header .contact .links {
 	margin-bottom: 2em;
 }
