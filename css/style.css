@@ -76,20 +76,10 @@ header {
 	padding: 20px 0 20px;
 }
 header .name {
-    /*width:60%;*/
-    /*display: inline-block;*/
-    /*margin-right:2%;*/
-    /*min-width: 300px;*/
     margin-bottom: 15px;
 }
 header .contact{
-	/*width:35%;*/
-	/*margin-left: 40px;*/
-	/*text-align: right;*/
-	/*display: inline-block;*/
 	vertical-align: text-bottom;
-    /*float:right;*/
-    /*min-width: 225px;*/
     line-height: 1.4em;
     margin:0 0 6px 0;
 }
@@ -131,7 +121,7 @@ footer {
     padding:0 14px 0;
 }
 #main{
-	padding:60px 14px;
+	padding-top:60px;
 }
 article{
 	margin-bottom:60px;
@@ -210,15 +200,23 @@ footer .top a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-    /*header .name,*/
+    header .name {
+        float: left;
+    }
+    header .contact {
+        margin-top: 30px;
+        float: right;
+        text-align: right;
+    }
     article img {
         float:left;
         width: 62%;
-        margin:0 4% 0 0;
+        /*margin:0 4% 0 0;*/
     }
-    header .contact,
     article .box {
         width:30%;
+        float: right;
+        margin:0;
     }
 }
 
