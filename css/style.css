@@ -145,13 +145,11 @@ footer p{
 }
 article img {
     width:100%;
-	min-width: 345px;
 	border:solid 1px #CACED1;
 }
 article .box {
     margin-top:20px;
 	display: inline-block;
-    min-width: 200px;
 }
 article p {
 	letter-spacing: 0.4px;
