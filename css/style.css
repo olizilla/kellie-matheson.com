@@ -90,7 +90,7 @@ header .contact .telephone {
 	letter-spacing: 1px;
 }
 header .contact .links {
-	margin-bottom:2px;
+	margin-bottom:3px;
 }
 header .contact .links a:before {
 	content:"| ";
