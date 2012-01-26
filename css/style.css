@@ -118,7 +118,7 @@ header .box,
 footer {
 	max-width: 960px;
 	margin:0 auto;
-    padding:0 14px 0;
+	padding:0 14px 0;
 }
 #main{
 	padding-top:60px;
@@ -166,19 +166,19 @@ article p {
 	-webkit-border-radius:0.2em;
 }
 footer .copyright {
-    font-size: smaller;
-    border-top: solid 2px #fff;
-    line-height: 4em;
+	font-size: smaller;
+	border-top: solid 2px #fff;
+	line-height: 4em;
 }
 footer .top a{
-    display: block;
-    width:15px;
-    height: 18px;
-    background: url(../img/arrow_up.gif) no-repeat;
-    float:right;
+	display: block;
+	width:15px;
+	height: 18px;
+	background: url(img/arrow_up.gif) no-repeat;
+	    float:right;
 }
 footer .top a:hover {
-    background-image: url(../img/arrow_up_hover.gif);
+	background-image: url(img/arrow_up_hover.gif);
 }
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
