@@ -66,7 +66,6 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: olizilla <oli@zilla.org.uk>
    ========================================================================== */
-
 html {
 	background: #f0f0f0;
 }
@@ -193,9 +192,15 @@ footer .top a:hover {
 
 /* ==|== media queries ====================================================== */
 
-@media only screen and (min-width: 480px) {
+/* -- iphone<4s -- */
+/*@media only screen and (max-device-width: 480px) {*/
+	/*html{*/
+		/*-webkit-text-size-adjust: none;*/
+	/*}*/
+/*}*/
 
-}
+/*@media only screen and (min-width: 480px) {*/
+/*}*/
 
 @media only screen and (min-width: 768px) {
     header .name {
