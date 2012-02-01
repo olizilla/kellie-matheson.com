@@ -10,7 +10,7 @@ audio:not([controls]) { display: none; }
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 body { margin: 0; font-size: 13px; line-height: 1.231; }
-body, button, input, select, textarea { font-family: 'Lato',Helvetica,Arial,sans-serif; color: #111; }
+body, button, input, select, textarea { font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 'Lato', Arial, "Lucida Grande", sans-serif; font-weight:300;  color: #111; }
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
@@ -101,23 +101,26 @@ header .contact .links a:first-child:before {
     margin: 0;
 }
 header h1{
-	font-family:"Lato","HelveticaNeue-UltraLight", "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/*font-family:"HelveticaNeue-UltraLight","Helvetica Neue UltraLight","Helvetica Neue",Helvetica,"Lato",Arial,"Lucida Grande",sans-serif;*/
+	/*font-family:"HelveticaNeue-UltraLight","Helvetica Neue UltraLight","Helvetica Neue","Lato", Helvetica, Arial,"Lucida Grande",sans-serif;*/
+	font-family:"Lato", sans-serif;
 	font-weight:100;
 	font-size:3.6em;
-    letter-spacing: -3px;
+	letter-spacing: -3px;
 	margin: 0;
 }
 header h2{
 	font-size: 2.4em;
 	text-transform: lowercase;
-	margin: -4px 0 6px 0;
+	margin: 0 0 6px 0;
+	line-height: 1;
 }
 header .box,
 #main,
 footer {
 	max-width: 960px;
 	margin:0 auto;
-	padding:0 14px 0;
+	padding:0 12px 0;
 }
 #main{
 	padding-top:60px;
@@ -144,11 +147,13 @@ footer p{
 }
 article img {
     width:100%;
+	max-width:650px;
 	border:solid 1px #CACED1;
 }
 article .box {
     margin-top:20px;
 	display: inline-block;
+	max-width:650px;
 }
 article p {
 	letter-spacing: 0.4px;
@@ -174,11 +179,34 @@ footer .top a{
 	width:15px;
 	height: 18px;
 	background: url(img/arrow_up.gif) no-repeat;
-	    float:right;
+	float:right;
 }
 footer .top a:hover {
 	background-image: url(img/arrow_up_hover.gif);
 }
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (min-width: 768px) {
+    header .name {
+        float:left;
+    }
+    header .contact {
+        margin-top:30px;
+        float:right;
+        text-align:right;
+    }
+    article img {
+        float:left;
+        width:68%;
+    }
+    article .box {
+        width:29%;
+        float:right;
+        margin:0;
+    }
+}
+
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
@@ -189,39 +217,6 @@ footer .top a:hover {
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
-
-/* ==|== media queries ====================================================== */
-
-/* -- iphone<4s -- */
-/*@media only screen and (max-device-width: 480px) {*/
-	/*html{*/
-		/*-webkit-text-size-adjust: none;*/
-	/*}*/
-/*}*/
-
-/*@media only screen and (min-width: 480px) {*/
-/*}*/
-
-@media only screen and (min-width: 768px) {
-    header .name {
-        float: left;
-    }
-    header .contact {
-        margin-top: 30px;
-        float: right;
-        text-align: right;
-    }
-    article img {
-        float:left;
-        width: 62%;
-        /*margin:0 4% 0 0;*/
-    }
-    article .box {
-        width:30%;
-        float: right;
-        margin:0;
-    }
-}
 
 /* ==|== print styles ======================================================= */
  

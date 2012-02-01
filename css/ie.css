@@ -1,0 +1,37 @@
+.oldie header .box,
+.oldie #main,
+.oldie footer {
+	width: 960px;
+	margin:0 auto;
+	padding:0 12px 0;
+}
+.oldie article img{
+	width:auto;
+	height:auto;
+}
+
+.oldie #main{
+	margin-top: 60px;
+}
+
+.oldie header .name {
+	float:left;
+}
+.oldie header .contact {
+	margin-top:30px;
+	float:right;
+	text-align:right;
+}
+.oldie article img {
+	float:left;
+	width:68%;
+}
+.oldie article .box {
+	width:29%;
+	float:right;
+	margin:0;
+}
+.oldie header h1{
+	font-weight: normal;
+}
+
