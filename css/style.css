@@ -126,10 +126,10 @@ footer {
 	padding:0 12px 0;
 }
 #main{
-	padding-top:60px;
+	padding-bottom:60px;
 }
 article{
-	margin-bottom:60px;
+	padding-top:60px;
 }
 article header {
 	border-bottom: solid 2px #fff;
@@ -196,14 +196,13 @@ footer .top a:hover {
 	background: url(img/arrow_left_hover.gif) no-repeat;
 }
 .work {
-	text-align: center;
+	padding-top: 60px
 }
 .work .back {
 	float:right;
 	margin: 16px 0 0;
 }
 .work h1 {
-	text-align: left;
 	margin-top:0;
 }
 .work img{
