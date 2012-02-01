@@ -69,18 +69,36 @@ td { vertical-align: top; }
 html {
 	background: #f0f0f0;
 }
-header {
+h1 {
+	font-family:"Lato", sans-serif;
+	font-weight:100;
+	font-size: 2.6em;
+}
+header#top {
 	background: #fafafa;
 	border-bottom: solid 1px #bebebe;
 	padding: 20px 0 20px;
 }
 header .name {
+	display: block;
     margin-bottom: 15px;
+	color: #111;
+}
+header .name h1{
+	font-size:3.6em;
+	letter-spacing: -3px;
+	margin: 0;
+}
+header .name h2{
+	font-size: 2.4em;
+	text-transform: lowercase;
+	margin: 0 0 6px 0;
+	line-height: 1;
 }
 header .contact{
 	vertical-align: text-bottom;
-    line-height: 1.4em;
-    margin:0 0 6px 0;
+	line-height: 1.4em;
+	margin:0 0 6px 0;
 }
 header .contact .email {
 	color: #7d858f;
@@ -98,27 +116,12 @@ header .contact .links a:before {
 }
 header .contact .links a:first-child:before {
 	content:"";
-    margin: 0;
-}
-header h1{
-	/*font-family:"HelveticaNeue-UltraLight","Helvetica Neue UltraLight","Helvetica Neue",Helvetica,"Lato",Arial,"Lucida Grande",sans-serif;*/
-	/*font-family:"HelveticaNeue-UltraLight","Helvetica Neue UltraLight","Helvetica Neue","Lato", Helvetica, Arial,"Lucida Grande",sans-serif;*/
-	font-family:"Lato", sans-serif;
-	font-weight:100;
-	font-size:3.6em;
-	letter-spacing: -3px;
 	margin: 0;
-}
-header h2{
-	font-size: 2.4em;
-	text-transform: lowercase;
-	margin: 0 0 6px 0;
-	line-height: 1;
 }
 header .box,
 #main,
 footer {
-	max-width: 960px;
+	max-width: 980px;
 	margin:0 auto;
 	padding:0 12px 0;
 }
@@ -130,13 +133,12 @@ article{
 }
 article header {
 	border-bottom: solid 2px #fff;
-	background: transparent;
-	margin: -6px 0 0;
-	padding:0;
+	margin-top: -6px;
 }
 article header h1 {
 	font-size: 2.6em;
-    letter-spacing: normal;
+	letter-spacing: normal;
+	margin: 0 0 10px;
 }
 article header p,
 footer p{
@@ -184,6 +186,31 @@ footer .top a{
 footer .top a:hover {
 	background-image: url(img/arrow_up_hover.gif);
 }
+.back a {
+	display: block;
+	width:18px;
+	height:15px;
+	background: url(img/arrow_left.gif) no-repeat;
+}
+.back a:hover {
+	background: url(img/arrow_left_hover.gif) no-repeat;
+}
+.work {
+	text-align: center;
+}
+.work .back {
+	float:right;
+	margin: 16px 0 0;
+}
+.work h1 {
+	text-align: left;
+	margin-top:0;
+}
+.work img{
+	margin: 0 0 80px 0;
+	width:auto;
+}
+
 
 /* ==|== media queries ====================================================== */
 
