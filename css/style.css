@@ -1,7 +1,6 @@
 /* HTML5 ✰ Boilerplate
  * ==|== normalize ==========================================================
  */
-
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
@@ -61,7 +60,6 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
-
 
 /* ==|== primary styles =====================================================
    Author: olizilla <oli@zilla.org.uk>
@@ -126,7 +124,7 @@ footer {
 	padding:0 12px 0;
 }
 #main{
-	padding-bottom:60px;
+	margin-bottom:60px;
 }
 article{
 	padding-top:60px;
@@ -196,7 +194,7 @@ footer .top a:hover {
 	background: url(img/arrow_left_hover.gif) no-repeat;
 }
 .work {
-	padding-top: 60px
+	padding-top: 60px;
 }
 .work .back {
 	float:right;
@@ -206,16 +204,18 @@ footer .top a:hover {
 	margin-top:0;
 }
 .work img{
-	margin: 0 0 80px 0;
+	margin: 0;
 	width: 100%;
+}
+.work .lazy img {
+    margin-top:60px;
 }
 .lazy {
 	min-height: 200px;
-	display: inline-block;
+	display: block; /* appear plugin only seems to work on chrome if the trigger element is display:block */
 }
 
 /* ==|== media queries ====================================================== */
-
 /* ipad portrait is 768, so this only applies to ipad landscape or larger */
 @media only screen and (min-width: 770px) {
 	header .box,
@@ -254,7 +254,6 @@ footer .top a:hover {
 .clearfix { zoom: 1; }
 
 /* ==|== print styles ======================================================= */
- 
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
   a, a:visited { text-decoration: underline; }

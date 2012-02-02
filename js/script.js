@@ -1,12 +1,11 @@
 /* Author: Oli Evans <oli@zilla.org.uk>
 */
+$('.lazy img').hide();
 
 $(function(){
 
 	function lazyLoadImages() {
 		// TODO: load images on demand. Looks like browsers will start doing this kind of optimisation soon:
-		$('.lazy img').hide();
-
 		$('.lazy').appear(function(){
 			$('img', $(this)).fadeIn('slow');
 		});
