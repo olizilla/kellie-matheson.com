@@ -121,7 +121,7 @@ header .contact .links a:first-child:before {
 header .box,
 #main,
 footer {
-	max-width: 980px;
+	max-width: 650px;
 	margin:0 auto;
 	padding:0 12px 0;
 }
@@ -216,24 +216,30 @@ footer .top a:hover {
 
 /* ==|== media queries ====================================================== */
 
-@media only screen and (min-width: 770px) { /* ipad portrait is 768, so this only applies to ipad landscape or larger */
-    header .name {
-        float:left;
-    }
-    header .contact {
-        margin-top:30px;
-        float:right;
-        text-align:right;
-    }
-    article img {
-        float:left;
-        width:68%;
-    }
-    article .box {
-        width:29%;
-        float:right;
-        margin:0;
-    }
+/* ipad portrait is 768, so this only applies to ipad landscape or larger */
+@media only screen and (min-width: 770px) {
+	header .box,
+	#main,
+	footer {
+		max-width: 980px;
+	}
+	header .name {
+		float:left;
+	}
+	header .contact {
+		margin-top:30px;
+		float:right;
+		text-align:right;
+	}
+	article img {
+		float:left;
+		width:68%;
+	}
+	article .box {
+		width:29%;
+		float:right;
+		margin:0;
+	}
 }
 
 /* ==|== non-semantic helper classes ======================================== */

@@ -24,12 +24,7 @@ $(function(){
 		}
 	}
 
-	function zoomInOnWorkImages() {
-		$('.work a.lazy').colorbox({rel:'lazy', maxWidth:'96%', maxHeight:'96%', scalePhotos:'true'});
-	}
-
 	// on document ready
 	lazyLoadImages();
 	disableZoomOnRotate();
-	zoomInOnWorkImages();
 });
