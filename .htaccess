@@ -1,6 +1,21 @@
 # .htaccess adapted from h5bp
 #
 
+# Update old urls to match new site layout
+Redirect permanent /argos.html      http://www.kellie-matheson.com/work/argos
+Redirect permanent /vanda.htm       http://www.kellie-matheson.com/work/v&a
+Redirect permanent /SavillsNH.htm   http://www.kellie-matheson.com/work/savills
+Redirect permanent /s_trip.htm      http://www.kellie-matheson.com/work/s-trip
+Redirect permanent /kbc.htm         http://www.kellie-matheson.com/work/kbc
+Redirect permanent /imperial.htm    http://www.kellie-matheson.com/work/imperial
+Redirect permanent /frs.html        http://www.kellie-matheson.com/work/fire-and-rescue-service
+Redirect permanent /exquisite.html  http://www.kellie-matheson.com/work/exquisite-photography
+Redirect permanent /atomico.html    http://www.kellie-matheson.com/work/atomico
+Redirect permanent /artotel.html    http://www.kellie-matheson.com/work/art-otel
+Redirect permanent /argos.html      http://www.kellie-matheson.com/work/argos
+Redirect permanent /anz.html        http://www.kellie-matheson.com/work/air-new-zealand
+
+
 # ----------------------------------------------------------------------
 # Proper MIME type for all files
 # ----------------------------------------------------------------------
